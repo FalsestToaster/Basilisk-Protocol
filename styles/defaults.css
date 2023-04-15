@@ -1,0 +1,152 @@
+:root {
+    --light: #f8f8ff;
+
+    --dark: #090b19;
+
+    --c1: #172fff;
+
+    --c2: #3d99f5;
+    --c2a: #20507e;
+    --c2b: #1f314c;
+
+    --c3: #61ffec;
+    --c3a: #5b96ab;
+
+    --width: clamp(10rem, 88vw, 140rem);
+}
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    cursor: default;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark);
+    letter-spacing: 0.06rem;
+    position: relative;
+    color: var(--light);
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+img {
+    user-select: none;
+    max-width: 100%;
+}
+
+.mobile_hidden {
+    display: none;
+}
+
+::selection {
+    color: var(--light);
+    background-color: var(--c2a);
+
+    -webkit-background-clip: initial;
+    
+    -webkit-text-fill-color: initial;
+}
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--c2);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-variable.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-italic-variable.ttf');
+    font-style: italic;
+}
+
+button {
+    background-color: transparent;
+    outline-color: transparent;
+    border: unset;
+    padding: unset;
+    font-family: 'Brooklyn', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+    outline: 0.1rem solid transparent;
+}
+
+.flex {
+    display: flex;
+}
+
+
+ul {
+    list-style: unset;
+    padding: unset;
+    margin: unset;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+@media (min-width:1920px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:2440px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:3000px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:4000px) {
+    html {
+        font-size: 22px;
+    }
+}
